@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: texto-1;
+    src: url(/Karla-Italic-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: texto-2;
+    src: url(/Karla-VariableFont_wght.ttf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-1{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.container-1>h1{
+    height: 35px;
+    font-family: texto-1;
+    font-size: 25px;
+    color: hsl(218, 22%, 67%);
+}
+.container-1>h2{
+    height: 55px;
+    font-family: texto-1;
+    font-size: 20px;
+    color: hsl(71, 73%, 54%);
+}
+.container-1>p{
+    height: 115px;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: texto-1;
+    color: hsl(210, 2%, 55%);
+}
+
+.container-2{
+    width: 375px;
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    text-indent: 40px;
+    background-color:  hsl(179, 62%, 43%) ;
+}
+.section-1>h2{
+    height: 50px;
+    font-family: texto-2;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+}
+.section-1>h3{
+    width: 375px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 33px;
+    font-family: texto-2;
+    color: white;
+}
+.section-1>h3>small{
+    font-size: 15px;
+    font-family: texto-2;
+    align-self:flex-start;
+    font-weight:100;
+    align-self:center;
+    color: hsl(220, 12%, 80%);
+}
+.section-1>p{
+    height: 50px;
+    width: 375px;
+    font-family: texto-2;
+    color: white;
+}
+.section-1>button{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    align-self: center;
+    font-size: 18px;
+    font-family: texto-2;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+}
+.section-2{
+    width: 375px;
+    height: 270px;
+    background-color: hsl(179, 54%, 59%);
+    display: flex;
+    flex-direction: column;
+}
+.section-2>h2{
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-family: texto-2;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+.section-2>p{
+    width: 225px;
+    font-family: texto-2;
+    font-size: 16px;
+    line-height: 27px;
+    color: white;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+@media screen and (min-width:375px){
+    
+    main{
+        width: 100vw;
+        display: grid;
+        grid-template-rows: repeat(2,1fr,1fr);
+        align-items: center;
+
+    }
+    .container-1{
+        width: 100vw;
+        height: 50vh;
+    }
+    .container-1>h1{
+        width: 80%;
+        align-self: center;
+        font-size: 35px;
+    }
+    .container-1>h2{
+        width: 80%;
+        align-self: center;
+        font-size: 30px;
+    }
+    .container-1>p{
+        width: 60%;
+        margin-left: 10%;
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .container-2{
+        width: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+    }
+    .section-1{
+        width: 50vw;
+        height: 50vh;
+    }
+    .section-1>h2{
+        height: 80px;
+        width: 30vw;
+        font-size: 27px;
+        align-self: center;
+        text-indent: 0px;
+    }
+    .section-1>h3{
+        width: 30vw;
+        height: 80px;
+        font-size: 38px;
+        align-self: center;
+        text-indent: 0px;
+        gap: 20px;
+    }
+    .section-1>h3>small{
+        font-size: 20px;
+    }
+    .section-1>p{
+        height: 50px;
+        width: 30vw;
+        font-size: 22px;
+        align-self: center;
+        text-indent: 0px;
+    }
+    .section-1>button{
+        width: 30vw;
+        height: 60px;
+        border-radius: 5px;
+        border: none;
+        align-self: center;
+        font-size: 22px;
+        font-weight: 600;
+    }
+       
+    .section-2{
+        width: 50vw;
+        height: 50vh;
+    }
+    .section-2>h2{
+        width: 300px;
+        margin-left: 60px;
+        margin-top: 45px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .section-2>p{
+        width: 21vw;
+        font-size: 18px;
+        line-height: 28px;
+        margin-left: 60px;
+    }
+    
+}
